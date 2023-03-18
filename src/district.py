@@ -1,5 +1,6 @@
 import statistics
 import pandas as pd
+from importdf import *
 
 #https://realpython.com/python-statistics/ 
 class district:
@@ -66,6 +67,8 @@ class demographics(district):
         if other is not None: 
             self.gender['other'] = other
         return self.gender
-    #def mk_crsstb (self,trait_1,trait_2):
+    def mk_crsstb (self,data):
         #https://pbpython.com/pandas-crosstab.html
+        trait_1 = []
+        
 
